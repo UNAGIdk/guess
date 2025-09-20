@@ -11,6 +11,7 @@ import (
 	"strings"
 )
 
+//starts the game
 func Guess() {
 	var numberToGuess int = rand.Intn(101)
 	totalGuessesAmount := 10
@@ -45,3 +46,4 @@ func Guess() {
 		fmt.Println("Sorry, you didn't guess my number in", totalGuessesAmount, "tries. It was:", numberToGuess)
 	}
 }
+
